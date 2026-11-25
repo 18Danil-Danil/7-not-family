@@ -1,8 +1,8 @@
 import { useState } from 'react'
-import { ArrowUpRight, Menu, X, Music2, Heart, Users, CalendarDays, MapPin, Instagram, ChevronDown } from 'lucide-react'
+import { ArrowUpRight, Menu, X, Music2, Heart, Users, CalendarDays, ChevronDown, ExternalLink, School, Camera } from 'lucide-react'
 import { events, news } from './data'
 
-const nav = [['О фестивале','about'],['Программа','program'],['Участники','families'],['Новости','news'],['Контакты','contacts']]
+const nav = [['О фестивале','about'],['Школа','school'],['Программа','program'],['Участники','families'],['Новости','news'],['Контакты','contacts']]
 function App() {
   const [open, setOpen] = useState(false)
   const close = () => setOpen(false)
@@ -38,6 +38,24 @@ function App() {
 
       <section className="facts-band"><div><Heart/><b>Семейные традиции</b><span>Через музыку и творчество</span></div><div><Users/><b>Не менее 20 семей</b><span>Планируемых участников</span></div><div><Music2/><b>5 встреч</b><span>Четыре концерта и финал</span></div><div><CalendarDays/><b>2027—2028</b><span>Период реализации проекта</span></div></section>
 
+      <section className="school-story section" id="school">
+        <div className="school-photo-panel">
+          <div className="school-photo-label"><Camera size={16}/> Ряжская детская музыкальная школа</div>
+          <div className="school-photo-frame"><div className="school-photo-inner"><School size={54}/><span>Место, где музыка берёт начало</span></div></div>
+          <div className="school-photo-caption">Ряжск · улица Ленина, 27</div>
+        </div>
+        <div className="school-story-copy">
+          <div className="section-kicker">ОРГАНИЗАТОР ФЕСТИВАЛЯ</div>
+          <h2>Школа, где музыка<br/><em>берёт начало</em></h2>
+          <p>Фестиваль проходит при участии Ряжской детской музыкальной школы имени А. И. Окаемова. Здесь дети знакомятся с музыкой, осваивают инструменты, поют, танцуют и выступают на сцене.</p>
+          <p>История школы началась в 1965 году. Сегодня в ней работают разные творческие направления — от фортепиано и народных инструментов до эстрадного и народного пения и хореографии.</p>
+          <div className="school-links">
+            <a className="button button-dark" href="https://xn----7sbtbpddfuxmp0etf.xn--p1ai/" target="_blank" rel="noreferrer">Официальный сайт <ExternalLink size={15}/></a>
+            <a className="button button-outline" href="https://vk.ru/myzshkolaryajsk" target="_blank" rel="noreferrer">Группа ВКонтакте <ExternalLink size={15}/></a>
+          </div>
+        </div>
+      </section>
+
       <section className="program section" id="program">
         <div className="section-kicker">02 / ПУТЬ ФЕСТИВАЛЯ</div>
         <div className="section-heading"><h2>Программа <em>фестиваля</em></h2><p>Четыре тематических концерта и итоговый гала-концерт. Между встречами — мастер-классы, консультации и совместные репетиции.</p></div>
@@ -56,7 +74,7 @@ function App() {
 
       <section className="closing"><div className="closing-ornament">♪</div><p>Семья — наш первый ансамбль.</p><h2>Пусть звучит<br/><em>вместе.</em></h2><a href="#contacts" className="button button-light">Связаться с организаторами <ArrowUpRight size={17}/></a></section>
     </main>
-    <footer id="contacts"><div className="footer-top"><div><a className="brand brand-footer" href="#top"><span className="brand-mark"><Music2 size={21}/></span><span><b>7 нот,</b><small>одна семья</small></span></a><p>Семейный музыкальный фестиваль<br/>Ряжской детской музыкальной школы</p></div><div className="footer-contact"><span className="section-kicker">ОРГАНИЗАТОР</span><b>Ряжская детская музыкальная школа</b><span>Рязанская область, Ряжск</span><a href="https://vk.com/" target="_blank" rel="noreferrer">Сообщество школы <ArrowUpRight size={14}/></a></div><div className="footer-contact"><span className="section-kicker">ПОДДЕРЖКА</span><b>Проект реализуется при поддержке</b><span>Президентского фонда культурных инициатив</span><a href="https://фондкультурныхинициатив.рф/" target="_blank" rel="noreferrer">Сайт фонда <ArrowUpRight size={14}/></a></div></div><div className="footer-bottom"><span>© 2027–2028 · «7 нот, одна семья»</span><span>Музыка, которая объединяет поколения</span></div></footer>
+    <footer id="contacts"><div className="footer-top"><div><a className="brand brand-footer" href="#top"><span className="brand-mark"><Music2 size={21}/></span><span><b>7 нот,</b><small>одна семья</small></span></a><p>Семейный музыкальный фестиваль<br/>Ряжской детской музыкальной школы</p></div><div className="footer-contact"><span className="section-kicker">ОРГАНИЗАТОР</span><b>Ряжская детская музыкальная школа</b><span>391964, Рязанская область, г. Ряжск, ул. Ленина, 27</span><span>+7 (49132) 2-13-00</span><span>muzikalnaya-shkola@mail.ru</span><a href="https://vk.ru/myzshkolaryajsk" target="_blank" rel="noreferrer">Сообщество школы <ArrowUpRight size={14}/></a></div><div className="footer-contact"><span className="section-kicker">ПОДДЕРЖКА</span><b>Проект реализуется при поддержке</b><span>Президентского фонда культурных инициатив</span><a href="https://фондкультурныхинициатив.рф/" target="_blank" rel="noreferrer">Сайт фонда <ArrowUpRight size={14}/></a></div></div><div className="footer-bottom"><span>© 2027–2028 · «7 нот, одна семья»</span><span>Музыка, которая объединяет поколения</span></div></footer>
   </div>
 }
 export default App
