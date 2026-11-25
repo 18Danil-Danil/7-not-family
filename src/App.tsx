@@ -36,17 +36,17 @@ function App() {
         <div className="intro-grid"><h2>Когда музыка<br/>становится <em>семейной</em></h2><div><p className="large-copy">«7 нот, одна семья» — фестиваль, который приглашает родных людей выйти на одну сцену и разделить радость совместного творчества.</p><p>Мы верим, что музыка может стать особенной семейной традицией: объединять поколения, помогать лучше понимать друг друга и создавать воспоминания, которые остаются надолго.</p><a className="under-link" href="#contacts">Организатор проекта <ArrowUpRight size={15}/></a></div></div>
       </section>
 
-      <section className="facts-band"><div><Heart/><b>Семейные традиции</b><span>Через музыку и творчество</span></div><div><Users/><b>Около 20 семей</b><span>Планируемых участников</span></div><div><Music2/><b>5 встреч</b><span>Четыре концерта и финал</span></div><div><CalendarDays/><b>2027—2028</b><span>Период реализации проекта</span></div></section>
+      <section className="facts-band"><div><Heart/><b>Семейные традиции</b><span>Через музыку и творчество</span></div><div><Users/><b>Не менее 20 семей</b><span>Планируемых участников</span></div><div><Music2/><b>5 встреч</b><span>Четыре концерта и финал</span></div><div><CalendarDays/><b>2027—2028</b><span>Период реализации проекта</span></div></section>
 
       <section className="program section" id="program">
         <div className="section-kicker">02 / ПУТЬ ФЕСТИВАЛЯ</div>
-        <div className="section-heading"><h2>Программа <em>фестиваля</em></h2><p>Пять музыкальных встреч, в которых каждая семья сможет рассказать свою историю.</p></div>
+        <div className="section-heading"><h2>Программа <em>фестиваля</em></h2><p>Четыре тематических концерта и итоговый гала-концерт. Между встречами — мастер-классы, консультации и совместные репетиции.</p></div>
         <div className="event-list">{events.map(e=><article className="event" key={e.number}><span className="event-number">{e.number}</span><div className="event-main"><h3>{e.title}</h3><p>{e.description}</p></div><span className="event-date">{e.date}</span><ArrowUpRight className="event-arrow"/></article>)}</div>
         <p className="note">Даты и подробности мероприятий будут опубликованы дополнительно. Программа может уточняться.</p>
       </section>
 
       <section className="families" id="families">
-        <div className="families-image"></div><div className="families-copy"><div className="section-kicker light">03 / ГЛАВНЫЕ ГЕРОИ</div><h2>Фестиваль<br/>создают <em>семьи</em></h2><p>Родители и дети, братья и сёстры, бабушки и дедушки — каждый может стать частью общего музыкального события.</p><a className="button button-light" href="#contacts">Узнать о фестивале <ArrowUpRight size={17}/></a></div>
+        <div className="families-image"></div><div className="families-copy"><div className="section-kicker light">03 / ГЛАВНЫЕ ГЕРОИ</div><h2>Фестиваль<br/>создают <em>семьи</em></h2><p>К участию приглашаются ученики школы в возрасте от 7 до 17 лет и их близкие: родители, бабушки, дедушки и другие члены семьи.</p><a className="button button-light" href="#contacts">Узнать о фестивале <ArrowUpRight size={17}/></a></div>
       </section>
 
       <section className="news section" id="news">
